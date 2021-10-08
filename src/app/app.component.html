@@ -1,12 +1,5 @@
-<app-header></app-header>
+<app-header (locationEmit)="onNavigate($event)"></app-header>
 <div class="container">
-  <div class = "row">
-    
-    <div class="col-lg-6">
-      <app-recipes-main></app-recipes-main>
-    </div>
-    <div class="col-lg-6">
-      <app-shopping-list-main></app-shopping-list-main>
-    </div>
-  </div>
+  <app-recipes-main *ngIf="location=='recipe'"></app-recipes-main>
+  <app-shopping-list-main *ngIf="location=='shopping'"></app-shopping-list-main>
 </div>
