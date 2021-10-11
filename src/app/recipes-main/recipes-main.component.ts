@@ -13,12 +13,11 @@ export class RecipesMainComponent implements OnInit {
 
   constructor() { 
     this.recipes = [
-      new Recipe("A Test Recipe", "This is simply a test", "https://www.simplyrecipes.com/thmb/IbY_MK3pA1G_ZHzWltgZCxe_OUk=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2012__07__grilled-sweet-potatoes-vertical-a-1600-0eafb4cd27b74617abb36379751eed51.jpg"),
-      new Recipe("Black Beans", "A black beans recipe.", ""),
-      new Recipe("Mashed potatoes", "A mashed potatoes recipe.", "")
+      new Recipe("A Test Recipe", "This is simply a test", "assets/recipes/recipe1.jpg"),
+      new Recipe("Black Beans", "A black beans recipe.", "assets/recipes/recipe2.jpg"),
+      new Recipe("Mashed potatoes", "A mashed potatoes recipe.", "assets/recipes/recipe3.jpg")
     ];
 
-    this.selectedRecipe = this.recipes[0];
     this.recipes[0].ingredients = [
       new Ingredient("test ingredient 1", 1),
       new Ingredient("test ingredient 2", 1)
