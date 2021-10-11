@@ -7,7 +7,7 @@ import { Recipe } from 'src/app/model/recipe.model';
   styleUrls: ['./recipe-list.component.scss']
 })
 export class RecipeListComponent implements OnInit {
-  @Input() recipes;
+  @Input() recipes : Recipe[];
   @Output() selectRecipe = new EventEmitter<Recipe>();
   constructor() { }
 
