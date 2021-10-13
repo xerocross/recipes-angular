@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,7 @@ export class HeaderComponent implements OnInit {
   @Output("locationEmit") locationEmitter = new EventEmitter<{location : string}>();
   constructor() { }
 
+  myEnvironment: string = environment.ENV;
   ngOnInit(): void {
   }
 
