@@ -14,6 +14,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list/shopping-li
 import { DropdownDecorator } from './directives/dropdown.directive';
 import { ExperimentComponent } from './experiment/experiment.component';
 import { FormsModule } from '@angular/forms';
+import { BasicHighlightDirective } from './directives/basic-highlight.directive';
+import { BetterHighlightDirective } from './directives/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { FormsModule } from '@angular/forms';
     ShoppingListComponent,
     DropdownDecorator,
     ExperimentComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule,
